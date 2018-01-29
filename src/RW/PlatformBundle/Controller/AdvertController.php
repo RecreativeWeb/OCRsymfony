@@ -8,6 +8,8 @@ use Symfony\Component\HttpFoundation\Response;
 class AdvertController extends Controller
 {
 
+// (nom du paramètre dans la route = nom de l'argument dans la méthode du contrôleur)
+
   public function indexAction()
   {
     $content = $this->get('templating')->render('RWPlatformBundle:Advert:index.html.twig');
