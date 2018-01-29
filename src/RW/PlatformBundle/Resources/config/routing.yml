@@ -1,0 +1,3 @@
+rw_platform_homepage:
+    path:     /
+    defaults: { _controller: RWPlatformBundle:Default:index }
