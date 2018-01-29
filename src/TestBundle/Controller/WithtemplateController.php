@@ -8,6 +8,8 @@ class WithtemplateController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('TestBundle:Withtemplate:index.html.twig');
+        return $this->render('TestBundle:Withtemplate:index.html.twig', array(
+        	'prenom' => "Audrey"
+        ));
     }
 }
