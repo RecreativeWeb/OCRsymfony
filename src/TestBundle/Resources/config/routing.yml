@@ -6,3 +6,8 @@ test_hello_world:
     path:     /with-templating
     defaults: { _controller: TestBundle:Withtemplate:index }
 
+test_view_slug:
+    path:      /test/{year}/{slug}.{format}
+    defaults:
+        _controller: TestBundle:Withouttemplate:viewSlug
+
