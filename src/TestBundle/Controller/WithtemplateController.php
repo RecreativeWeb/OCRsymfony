@@ -4,10 +4,10 @@ namespace TestBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
-class HelloController extends Controller
+class WithtemplateController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('TestBundle:Hello:index.html.twig');
+        return $this->render('TestBundle:Withtemplate:index.html.twig');
     }
 }

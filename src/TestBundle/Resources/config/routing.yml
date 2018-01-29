@@ -1,3 +1,8 @@
+test_without_templating:
+    path:     /without-templating
+    defaults: { _controller: TestBundle:Withouttemplate:index }
+
 test_hello_world:
-    path:     /hello-world
-    defaults: { _controller: TestBundle:Hello:index }
+    path:     /with-templating
+    defaults: { _controller: TestBundle:Withtemplate:index }
+
