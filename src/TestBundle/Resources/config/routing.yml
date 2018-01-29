@@ -9,5 +9,9 @@ test_hello_world:
 test_view_slug:
     path:      /test/{year}/{slug}.{format}
     defaults:
-        _controller: TestBundle:Withouttemplate:viewSlug
+        _controller: RWPlatformBundle:Withouttemplate:viewSlug
+        format:      html
+    requirements:
+        year:   \d{4}
+        format: html|xml
 
