@@ -1,11 +1,11 @@
 rw_platform_home:
-    path:     /platform
+    path:     /
     defaults: { _controller: RWPlatformBundle:Advert:index }
     
 rw_platform_view:
-    path:      /platform/advert/{id}
+    path:      /advert/{id}
     defaults: { _controller: RWPlatformBundle:Advert:view }
     
 rw_platform_add:
-    path:      /platform/add
+    path:      /add
     defaults: { _controller: RWPlatformBundle:Advert:add }

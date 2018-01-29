@@ -1,6 +1,6 @@
 rw_platform:
     resource: "@RWPlatformBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /platform
 
 test:
     resource: "@TestBundle/Resources/config/routing.yml"
