@@ -6,3 +6,7 @@ test_hello_world:
     path:     /with-templating
     defaults: { _controller: TestBundle:Withtemplate:index }
 
+test_view:
+    path:    /test-view
+    defaults: {_controller: TestBundle:Url:url }
+
