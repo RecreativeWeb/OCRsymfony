@@ -10,3 +10,7 @@ test_view:
     path:    /test-view
     defaults: {_controller: TestBundle:Url:url }
 
+test_twig:
+    path:    /test-twig
+    defaults: {_controller: TestBundle:Url:twigUrl }
+

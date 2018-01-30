@@ -1,0 +1,18 @@
+
+{# Dans une vue Twig, en considérant bien sûr
+   que la variable advert_id est disponible #}
+
+<a href="{{ path('test_twig', { 'name': name }) }}">
+    Lien vers la page {{ name }}
+</a>
+
+<br><br>
+
+<p>
+ pour générer une URL absolue depuis Twig, pas de troisième argument,
+ on utilise la fonction url()au lieu de path()
+ </p>
+
+ <br>
+
+ <a href="{{ url ('test_twig', { 'name': name }) }}">url absolue vers la page de test</a>

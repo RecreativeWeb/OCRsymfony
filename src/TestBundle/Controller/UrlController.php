@@ -16,8 +16,8 @@ class UrlController extends Controller
 
 	// Méthode courte
 	//$url = $this->generateUrl('oc_platform_home');
-	
-    public function UrlAction()
+
+    public function urlAction()
     {
         // On veut avoir l'URL de l'annonce d'id 5.
         $url = $this->get('router')->generate(
@@ -28,6 +28,13 @@ class UrlController extends Controller
         // $url vaut « /platform/advert/5 »
         
         return new Response("L'URL de l'annonce d'id 5 est : ".$url);
+    }
+
+    public function twigUrlAction()
+    {
+    	return $this->render('TestBundle:Url:index.html.twig', array(
+        	'name' => 'test'
+        ));
     }
 
 }
